@@ -14,11 +14,11 @@ There are challenges off the bat that need to be considered: namely that it is d
 
 <img src="images/types.png" width="750" align="center">
 
-Modeling with neural networks is tricky with more than a handful of classifiers. There are 18 types in total that a Pokémon can get their primary and secondary typing from. For the sake of the project, I've limited the amount of classifiers (and Pokémon included) to contain just the most common ones (Water, Normal, Grass, Pyschic, Bug, Fire, Poison, Ground, Fighting, and Rock) and only included the primary types as classifiers. This could mean the machine mislabels them for their primary type but could have labeled them correctly for their secondary type.
+Modeling with neural networks is tricky with more than a handful of classifiers. There are 18 types in total that a Pokémon can get their primary and secondary typing from. For the sake of the project, I've limited the amount of classifiers (and Pokémon included) to contain just the most common ones and only included the primary types as classifiers. This could mean the machine mislabels them for their primary type but could have labeled them correctly for their secondary type.
 
 ## The Data
  
-The data comes from four sources: I scraped images and types from PokemonDB and Bulbapedia. I also used two Kaggle datasets – "7,000 Labeled Pokemon" by Lance Zhang and "Pokemon Generation One" by Harshit Dwivedi – which together contained nearly 13,000 images of the first 150 Pokémon. As a result, there are only two images each for the other 860.
+The data comes from four sources: I scraped images and types from PokemonDB and Bulbapedia. I also used two Kaggle datasets – "7,000 Labeled Pokemon" by Lance Zhang and "Pokemon Generation One" by Harshit Dwivedi – which together contained nearly 18,000 images of the first 150 Pokémon. As a result, there are far fewer other 860.
 
 <img src="images/images.png" width="750" align="center">
 
@@ -30,7 +30,7 @@ I began modeling with a simple convolutional neural network. Images were sized t
 
 The first model was vastly overfit with a train accuracy of over 90% and a test accuracy of near 50%. To solve for this, each subsequent model was tuned with either more layers, regularization, or a change in optimizers. I first used the Adam optimizer and briefly tried SGD. Altering the learning rate with SGD kept breaking the kernel in a way I couldn't solve.
 
-<img src="images/confusionmatrix.png" width="750" align="center">
+<>
 
 Ultimately, after five models, I was only able to raise the test accuracy to 55%. The previously discussed issues regarding colation and typings could be the culprit, or it could be that the data heavily favored the first 150 Pokémon over the rest.
 
