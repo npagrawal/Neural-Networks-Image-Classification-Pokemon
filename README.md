@@ -6,7 +6,7 @@
 
 Pokémon has been a staple of culture since the mid-90s, when the world was introduced to Pikachu and Ash through the anime and, following that, the hit Game Boy games Red and Blue version. Since then, the Pokémon company has added to its collection of pocket monsters with regular installments of the show and the game series. What started out as 150 monsters, has grown to over 1000 with more on the way.
 
-In the game and anime, Pokémon trainers are guided through their journery to Pokémon Mastery by a device known as the Pokédex (this too is inhabited by a Pokémon named Rotom). The Pokédex is a technological innovation that can identify all Pokémon the trainer encounters, giving them useful insight into the nature of the monster.
+In the game and anime, Pokémon trainers are guided through their journey to Pokémon Mastery by a device known as the Pokédex (this too is inhabited by a Pokémon named Rotom). The Pokédex is a technological innovation that can identify all Pokémon the trainer encounters, giving them useful insight into the nature of the monster.
 
 I wanted to create a real-world Pokédex that could do the same – a neural network that could scan an image of a Pokémon and tell you its type, which could be anything from Water to Flying.
 
@@ -18,7 +18,7 @@ Modeling with neural networks is tricky with more than a handful of classifiers.
 
 ## The Data
  
-The data comes from four sources: I scraped images and types from PokemonDB and Bulbapedia. I also used two Kaggle datasets – "7,000 Labeled Pokemon" by Lance Zhang and "Pokemon Generation One" by Harshit Dwivedi – which together contained nearly 18,000 images of the first 150 Pokémon. As a result, there are far fewer other 860.
+The data comes from four sources: I scraped images and types from PokemonDB and Bulbapedia. I also used two Kaggle datasets – "7,000 Labeled Pokemon" by Lance Zhang and "Pokemon Generation One" by Harshit Dwivedi – which together contained nearly 18,000 images of the first 150 Pokémon. As a result, there are far fewer than the other 860.
 
 <img src="images/images.png" width="750" align="center">
 
@@ -32,7 +32,7 @@ The first model was vastly overfit with a train accuracy of over 90% and a test 
 
 <>
 
-Ultimately, after five models, I was only able to raise the test accuracy to 55%. The previously discussed issues regarding colation and typings could be the culprit, or it could be that the data heavily favored the first 150 Pokémon over the rest.
+Ultimately, after five models, I was only able to raise the test accuracy to 55%. The previously discussed issues regarding image collection and typings could be the culprit, or it could be that the data heavily favored the first 150 Pokémon over the rest.
 
 ## Recommendations and Next Steps
 
