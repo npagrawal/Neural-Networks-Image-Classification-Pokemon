@@ -36,6 +36,6 @@ Ultimately, after five models, I had to go back to my first model (two convoluti
 
 ## Recommendations and Next Steps
 
-My recommendations, then, are that the Pokémon company should consider matching their Pokémon designs more so to typing to help future gameplayers (mostly kids) learn about the world quickly and effectively. Also, the lack of images for the later generations had much to do with the lack of these Pokémon being present in marketing products and the show. This should be changed.
+My recommendations, then, are that the Pokémon company should consider matching their Pokémon designs more so to typing to help future game players (mostly kids) learn about the world quickly and effectively. Also, the lack of images for the later generations had much to do with the lack of these Pokémon being present in marketing products and the show. This should be changed.
 
 Next steps would be to collect more images and a greater diversity of them, paying special attention to the Pokémon that are underrepresented in the dataset. Also, bringing in all the types and secondary typing is critical to the next Pokédex.
