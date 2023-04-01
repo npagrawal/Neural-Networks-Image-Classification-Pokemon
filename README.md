@@ -30,7 +30,7 @@ I began modeling with a simple convolutional neural network. Images were sized t
 
 The first model was vastly overfit with a train accuracy of over 90% and a test accuracy of near 50%. To solve for this, each subsequent model was tuned with either more layers, regularization, or a change in optimizers. I first used the Adam optimizer and briefly tried SGD. Altering the learning rate with SGD kept breaking the kernel in a way I couldn't solve.
 
-<>
+<img src="images/confusionmatrix.png" width="750" align="center">
 
 Ultimately, after five models, I was only able to raise the test accuracy to 55%. The previously discussed issues regarding image collection and typings could be the culprit, or it could be that the data heavily favored the first 150 Pokémon over the rest.
 
