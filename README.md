@@ -28,11 +28,11 @@ In the end, after cleaning and cutting down to the main types, I had nearly 10,0
 
 I began modeling with a simple convolutional neural network. Images were sized to 32 by 32 since Pokémon are largely simple in design – two or three colors and black outlines – and it made sense to all the machine to focus on a more generalizable image rather than get too up close with the images.
 
-The first model was vastly overfit with a train accuracy of over 90% and a test accuracy of near 50%. To solve for this, each subsequent model was tuned with either more layers, regularization, or a change in optimizers. I first used the Adam optimizer and briefly tried SGD. Altering the learning rate with SGD kept breaking the kernel in a way I couldn't solve.
+The first model was vastly overfit with a train accuracy of over 90% and a test accuracy of near 50%. To solve for this, each subsequent model was tuned with either more layers, regularization, or a change in optimizers. I first used the Adam optimizer and briefly tried SGD. 
 
 <img src="images/confusionmatrix.png" width="750" align="center">
 
-Ultimately, after five models, I was only able to raise the test accuracy to 55%. The previously discussed issues regarding image collection and typings could be the culprit, or it could be that the data heavily favored the first 150 Pokémon over the rest.
+Ultimately, after five models, I had to go back to my first model (two convolutional layers and two dense layers). It had a test accuracy to about 50%, the highest despite the overfit. The previously discussed issues regarding image collection and typings could be the culprit for the low accuracy score, or it could be that the data heavily favored the first 150 Pokémon over the rest.
 
 ## Recommendations and Next Steps
 
